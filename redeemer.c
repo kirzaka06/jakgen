@@ -7,6 +7,7 @@ void genJak(){
         }
         printf("\n");
     }
+    // pretend it is finished FAG
 }
 int main(){
     genJak();
