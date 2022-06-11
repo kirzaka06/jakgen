@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+/*juztlozeit*/
 void genJak(){
     for(int i=0;i<20;++i){
         for(int j=0;j<40;++j){
