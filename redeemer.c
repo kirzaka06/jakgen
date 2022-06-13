@@ -43,7 +43,7 @@ void genJak(){
     memset(line, sizeof(line), 0);
     /*read em*/
     /*whe the FUCK doesn't this work properly? ;-;*/
-    while(fgets(line, 5, file)!=NULL){/*shit literally redeems entire file into the string*/
+    while(fgets(line, 5, file)!=NULL){/*shit literally redeems entire file into the string(probably because I haven't changed the array I'm using :^))*/
         if(currline == linenum );
             printf("%s",line);
         ++currline;
