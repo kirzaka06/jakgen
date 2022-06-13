@@ -38,14 +38,13 @@ void genJak(){
         printf("\e[1;31mCUNT! I NEED THERE TO BE A FILE CALLED 'eyes' IN THIS FOLDER! I'M GONNA RAPE YOU SOON ENOUGH ;) HAVE FUN!\e[0m\n");
     /*reset vars*/
     linenum=rand()%2,currline=1;
-    linenum*=4;
+    linenum*=4;++linenum;
     jline=0;
-    memset(line, sizeof(line), 0);
+    char eline[10];
     /*read em*/
-    /*whe the FUCK doesn't this work properly? ;-;*/
-    while(fgets(line, 5, file)!=NULL){/*shit literally redeems entire file into the string(probably because I haven't changed the array I'm using :^))*/
-        if(currline == linenum );
-            printf("%s",line);
+    while(fgets(eline, 10, file)!=NULL){
+        if(currline >= linenum && currline < linenum+4)
+            printf("%s",eline);
         ++currline;
     }
     /*print out our jak*//*
